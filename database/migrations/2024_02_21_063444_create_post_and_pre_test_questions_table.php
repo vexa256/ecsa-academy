@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('post_and_pre_test_questions', function (Blueprint $table) {
             $table->id();
+            $table->string('uuid')->unique();
+            $table->string('Type');
+            $table->string('CID');
+            $table->string('TID');
+            $table->string('MID')->nullable();
+            $table->longText('Question');
+
+            $table->integer('CorrectAnswerOption');
+
             $table->timestamps();
         });
     }

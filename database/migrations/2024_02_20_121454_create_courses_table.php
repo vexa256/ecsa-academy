@@ -15,7 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('uuid')->unique();
             $table->string('CID')->unique();
+            $table->string('Category')->nullable();
             $table->string('CourseName');
+            $table->string('CourseLanguage')->default('English');
+            $table->string('CourseOperator')->default('ECSA-HC');
+            $table->string('CourseUrl')->default('epn:url');
             $table->longText('CourseDetails');
             $table->string('ThumbNail');
 

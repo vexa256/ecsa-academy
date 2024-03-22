@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('uuid')->unique();
             $table->string('MID')->unique();
+            $table->string('CID');
             $table->string('ModuleName');
             $table->longText('ModuleDetails');
             $table->string('ThumbNail');

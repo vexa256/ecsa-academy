@@ -13,10 +13,13 @@ return new class extends Migration
     {
         Schema::create('attempted_tests', function (Blueprint $table) {
             $table->id();
-            $table->string('TestID');
+            $table->string('TID');
             $table->string('StudentID');
             $table->string('CID');
             $table->string('Completed')->default('status');
+            $table->integer('TotalQuestionsAttempted')->default(0);
+            $table->integer('TotalQuestions')->default(0);
+            $table->integer('Score')->default(0);
             $table->string('MID')->nullable();
             $table->string('SID')->nullable();
 

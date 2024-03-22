@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('uuid')->unique();
             $table->string('SID')->unique();
-            $table->string('SesionName');
+            $table->string('SessionName');
+            $table->string('MID');
+            $table->string('CID');
             $table->longText('SessionDetails');
             $table->string('ThumbNail');
             $table->timestamps();
