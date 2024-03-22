@@ -23,10 +23,10 @@
                 <li><a href="{{ route('PharmaCourses') }}" class="active"><i
                             class="fas fa-prescription-bottle-alt"></i>Pharmaceutical
                         Practice <span><i class="fas fa-chevron-right"></i></span></a></li>
-                <li><a href="profile.html"><i class="fas fa-user-md"></i>Health Management <span><i
+                <li><a href="{{ route('HealthMgtCourses') }}"><i class="fas fa-user-md"></i>Health Management <span><i
                                 class="fas fa-chevron-right"></i></span></a></li>
-                <li><a href="login.html"><i class="fas fa-stethoscope"></i>Healthcare Practice <span><i
-                                class="fas fa-chevron-right"></i></span></a></li>
+                <li><a href="{{ route('HealthCarePractice') }}"><i class="fas fa-stethoscope"></i>Healthcare Practice
+                        <span><i class="fas fa-chevron-right"></i></span></a></li>
                 <li><a href="login.html"><i class="fas fa-heartbeat"></i>Public Health <span><i
                                 class="fas fa-chevron-right"></i></span></a></li>
                 <li><a href="login.html"><i class="fas fa-car"></i>Supply Chain <span><i

@@ -12,6 +12,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::controller(AcademyFrontController::class)->group(function () {
 
+        Route::get('PublicHealthCourses', 'PublicHealthCourses')->name('PublicHealthCourses');
+        Route::get('HealthCarePractice', 'HealthCarePractice')->name('HealthCarePractice');
         Route::get('HealthMgtCourses', 'HealthMgtCourses')->name('HealthMgtCourses');
         Route::get('PharmaCourses', 'PharmaCourses')->name('PharmaCourses');
         Route::get('EnglishCourses', 'EnglishCourses')->name('EnglishCourses');

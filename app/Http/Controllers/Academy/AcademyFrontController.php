@@ -139,12 +139,50 @@ class AcademyFrontController extends Controller
     {
 // Change here to paginate
         $courses = DB::table('courses')
-            ->where('Category', 'essentials-of-pharmaceutical-practice')
+            ->where('Category', 'health-mgt')
             ->paginate(3); // paginate 6 items per page
         $twitterAccount = 'ECSA_HC';
         $data = [
             'Title' => 'ECSA-HC e-Learning Academy | Course Catalog',
-            'Filter' => 'Pharmacy Related Courses',
+            'Filter' => 'Health Management Courses',
+            'Desc' => 'Explore our comprehensive catalog of online courses tailored for healthcare professionals in East, Central, and Southern Africa. Enhance your skills with our specialized modules.',
+            'Keywords' => 'ECSA-HC, Online Healthcare Courses, e-Learning, Medical Education, Professional Development, Health Modules, Course Catalog, East Africa, Central Africa, Southern Africa',
+            'DatabaseData' => $courses,
+            'TwitterAccount' => $twitterAccount,
+        ];
+
+        return view('front.ViewCourses.CourseList', $data);
+    }
+
+    public function HealthCarePractice()
+    {
+// Change here to paginate
+        $courses = DB::table('courses')
+            ->where('Category', 'healthcare-practice')
+            ->paginate(3); // paginate 6 items per page
+        $twitterAccount = 'ECSA_HC';
+        $data = [
+            'Title' => 'ECSA-HC e-Learning Academy | Course Catalog',
+            'Filter' => 'Healthcare Practice Courses',
+            'Desc' => 'Explore our comprehensive catalog of online courses tailored for healthcare professionals in East, Central, and Southern Africa. Enhance your skills with our specialized modules.',
+            'Keywords' => 'ECSA-HC, Online Healthcare Courses, e-Learning, Medical Education, Professional Development, Health Modules, Course Catalog, East Africa, Central Africa, Southern Africa',
+            'DatabaseData' => $courses,
+            'TwitterAccount' => $twitterAccount,
+        ];
+
+        return view('front.ViewCourses.CourseList', $data);
+    }
+
+    public function PublicHealthCourses()
+    {
+// Change here to paginate
+        $courses = DB::table('courses')
+            ->where('Category', 'publichealth')
+            ->paginate(3); // paginate 6 items per page
+        $twitterAccount = 'ECSA_HC';
+        $data = [
+            'Title' => 'ECSA-HC e-Learning Academy | Course Catalog',
+            'Filter' => 'Public Health  Courses',
             'Desc' => 'Explore our comprehensive catalog of online courses tailored for healthcare professionals in East, Central, and Southern Africa. Enhance your skills with our specialized modules.',
             'Keywords' => 'ECSA-HC, Online Healthcare Courses, e-Learning, Medical Education, Professional Development, Health Modules, Course Catalog, East Africa, Central Africa, Southern Africa',
             'DatabaseData' => $courses,
