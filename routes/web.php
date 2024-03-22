@@ -8,34 +8,35 @@ use App\Http\Controllers\Academy\AcademyNotesController;
 use App\Http\Controllers\CrudController;
 use Illuminate\Support\Facades\Route;
 
+Route::controller(AcademyFrontController::class)->group(function () {
+
+    Route::get('PublicHealthCourses', 'PublicHealthCourses')->name('PublicHealthCourses');
+    Route::get('HealthCarePractice', 'HealthCarePractice')->name('HealthCarePractice');
+    Route::get('HealthMgtCourses', 'HealthMgtCourses')->name('HealthMgtCourses');
+    Route::get('PharmaCourses', 'PharmaCourses')->name('PharmaCourses');
+    Route::get('EnglishCourses', 'EnglishCourses')->name('EnglishCourses');
+    Route::get('SupplyChainCourses', 'SupplyChainCourses')->name('SupplyChainCourses');
+
+    Route::get('FrenchCourses', 'FrenchCourses')->name('FrenchCourses');
+
+    Route::get('EPNOperatedCourses', 'EPNOperatedCourses')->name('EPNOperatedCourses');
+
+    Route::get('EcsaOperatedCourses', 'EcsaOperatedCourses')->name('EcsaOperatedCourses');
+
+    Route::get('ECSAHC_ACADEMY', 'ECSAHC_ACADEMY')->name('ECSAHC_ACADEMY');
+    Route::get('/', 'ECSAHC_ACADEMY')->name('home');
+
+    Route::get('/OurCourseCatalogue', 'OurCourseCatalogue')->name('OurCourseCatalogue');
+
+});
+Route::controller(AcademyFrontCoursesController::class)->group(function () {
+
+    Route::get('ViewYourExams',
+        'ViewYourExams')->name('ViewYourExams');
+
+});
+
 Route::middleware(['auth'])->group(function () {
-
-    Route::controller(AcademyFrontController::class)->group(function () {
-
-        Route::get('PublicHealthCourses', 'PublicHealthCourses')->name('PublicHealthCourses');
-        Route::get('HealthCarePractice', 'HealthCarePractice')->name('HealthCarePractice');
-        Route::get('HealthMgtCourses', 'HealthMgtCourses')->name('HealthMgtCourses');
-        Route::get('PharmaCourses', 'PharmaCourses')->name('PharmaCourses');
-        Route::get('EnglishCourses', 'EnglishCourses')->name('EnglishCourses');
-
-        Route::get('FrenchCourses', 'FrenchCourses')->name('FrenchCourses');
-
-        Route::get('EPNOperatedCourses', 'EPNOperatedCourses')->name('EPNOperatedCourses');
-
-        Route::get('EcsaOperatedCourses', 'EcsaOperatedCourses')->name('EcsaOperatedCourses');
-
-        Route::get('ECSAHC_ACADEMY', 'ECSAHC_ACADEMY')->name('ECSAHC_ACADEMY');
-        Route::get('/', 'ECSAHC_ACADEMY')->name('home');
-
-        Route::get('/OurCourseCatalogue', 'OurCourseCatalogue')->name('OurCourseCatalogue');
-
-    });
-    Route::controller(AcademyFrontCoursesController::class)->group(function () {
-
-        Route::get('ViewYourExams',
-            'ViewYourExams')->name('ViewYourExams');
-
-    });
     Route::controller(AcademyExamsController::class)->group(function () {
 
         Route::get('ModularTestSelectCourse',

@@ -10,14 +10,14 @@
                             <span></span>
                         </span>
                     </a>
-                    <a href="index.html" class="navbar-brand logo">
+                    <a href="{{ url('/') }}" class="navbar-brand logo">
                         <img src="logos/logo2.png" class="img-fluid" alt="Logo">
                     </a>
                 </div>
                 <div class="main-menu-wrapper">
                     <div class="menu-header">
-                        <a href="index.html" class="menu-logo">
-                            <img src="logos/logo2.png" class="img-fluid" alt="Logo">
+                        <a href="{{ url('/') }}" class="menu-logo">
+                            <img src="{{ asset('logos/logo2.png') }}" class="img-fluid" alt="Logo">
                         </a>
                         <a id="menu_close" class="menu-close" href="javascript:void(0);">
                             <i class="fas fa-times"></i>
@@ -25,7 +25,7 @@
                     </div>
                     <ul class="main-nav">
                         <li class="active has-submenu">
-                            <a href="index.html">Courses <i class="fas fa-chevron-down"></i></a>
+                            <a href="{{ url('/') }}">Courses <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="{{ route('OurCourseCatalogue') }}">Explore Courses</a></li>
 
@@ -33,16 +33,16 @@
                         </li>
 
                         <li class="login-link">
-                            <a href="login.html">Login / Signup</a>
+                            <a href="{{ url('login') }}">Login / Signup</a>
                         </li>
                     </ul>
                 </div>
                 <ul class="nav header-navbar-rht">
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link" href="{{ url('login') }}">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link header-login" href="register.html">Sign up</a>
+                        <a class="nav-link header-login" href="{{ url('register') }}">Sign up</a>
                     </li>
                 </ul>
             </div>

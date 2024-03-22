@@ -28,7 +28,7 @@
                 <div class="row">
                     <div class="col-lg-6  d-flex align-items-end">
                         <div class="join-mentor-img aos" data-aos="fade-up">
-                            <img src="front-ui/assets/img/join.png" alt="">
+                            <img src="{{ asset('front-ui/assets/img/join.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -39,7 +39,8 @@
                                     cutting-edge courses designed to empower you with the knowledge and skills needed to
                                     excel in the dynamic healthcare industry.</p>
                                 <div class="find-more">
-                                    <a href="search.html" class="btn bg-find">Start Learning Now</a>
+                                    <a href="{{ route('OurCourseCatalogue') }}" class="btn bg-find">Start Learning
+                                        Now</a>
                                 </div>
                             </div>
                             <div class="best-course-detail">
@@ -48,7 +49,7 @@
                                     comprehensive courses cover every aspect of healthcare. Join ECSA-HC today and
                                     embark on a journey towards a rewarding and fulfilling career.</p>
                                 <div class="find-more">
-                                    <a href="search.html" class="btn bg-find">Explore Courses</a>
+                                    <a href="{{ route('OurCourseCatalogue') }}" class="btn bg-find">Explore Courses</a>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +169,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="new-course-img aos " data-aos="fade-up">
-                                <img src="front-ui/assets/img/course.png" alt="new course">
+                                <img src="{{ asset('front-ui/assets/img/course.png') }}" alt="new course">
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-6 d-flex align-items-center">
@@ -182,7 +183,7 @@
                                         <div class="input-group mb-3 subscribe-form">
                                             <input type="text" class="form-control course-text-bg"
                                                 placeholder="Enter your mail">
-                                            <a href="search.html" class="btn bg-course-subscribe">
+                                            <a href="{{ route('OurCourseCatalogue') }}" class="btn bg-course-subscribe">
                                                 Subscribe
                                             </a>
                                         </div>

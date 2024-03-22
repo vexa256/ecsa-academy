@@ -10,7 +10,7 @@
              <div class="row justify-content-center">
                  <!-- Essentials of Pharmaceutical Practice -->
                  <div class="col-lg-4 col-md-6">
-                     <a href="search.html?category=essentials-of-pharmaceutical-practice">
+                     <a href="{{ route('PharmaCourses') }}">
                          <div class="sub-categories d-flex align-items-center">
                              <div class="categories-img">
                                  <img style="height: 100px !important"
@@ -26,7 +26,7 @@
                  </div>
                  <!-- Health Management -->
                  <div class="col-lg-4 col-md-6">
-                     <a href="search.html?category=health-mgt">
+                     <a href="{{ route('HealthMgtCourses') }}">
                          <div class="sub-categories d-flex align-items-center">
                              <div class="categories-img">
                                  <img style="height: 100px"
@@ -42,7 +42,7 @@
                  </div>
                  <!-- Healthcare Practice -->
                  <div class="col-lg-4 col-md-6">
-                     <a href="search.html?category=healthcare-practice">
+                     <a href="{{ route('HealthCarePractice') }}">
                          <div class="sub-categories d-flex align-items-center">
                              <div class="categories-img">
                                  <img style="height: 100px"
@@ -58,7 +58,7 @@
                  </div>
                  <!-- Public Health -->
                  <div class="col-lg-4 col-md-6">
-                     <a href="search.html?category=publichealth">
+                     <a href="{{ route('PublicHealthCourses') }}">
                          <div class="sub-categories d-flex align-items-center">
                              <div class="categories-img">
                                  <img style="height: 100px"
@@ -74,7 +74,7 @@
                  </div>
                  <!-- Supply Chain and Quality Assurance -->
                  <div class="col-lg-4 col-md-6">
-                     <a href="search.html?category=supply-chain-and-quality-assurance">
+                     <a href="{{ route('SupplyChainCourses') }}">
                          <div class="sub-categories d-flex align-items-center">
                              <div class="categories-img">
                                  <img style="height: 100px"
@@ -92,7 +92,7 @@
 
                  <!-- Information and Communication Technology (ICT) -->
                  <div class="col-lg-4 col-md-6">
-                     <a href="search.html?category=ict">
+                     <a href="#">
                          <div class="sub-categories d-flex align-items-center">
                              <div class="categories-img">
                                  <img style="height: 100px"
@@ -111,7 +111,7 @@
 
              </div>
              <div class="explore-more text-center">
-                 <a href="search.html" class="btn bg-explore">Explore More</a>
+                 <a href="{{ route('OurCourseCatalogue') }}" class="btn bg-explore">Explore More</a>
              </div>
          </div>
      </div>

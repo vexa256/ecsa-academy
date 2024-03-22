@@ -27,9 +27,9 @@
                                 class="fas fa-chevron-right"></i></span></a></li>
                 <li><a href="{{ route('HealthCarePractice') }}"><i class="fas fa-stethoscope"></i>Healthcare Practice
                         <span><i class="fas fa-chevron-right"></i></span></a></li>
-                <li><a href="login.html"><i class="fas fa-heartbeat"></i>Public Health <span><i
+                <li><a href="{{ route('PublicHealthCourses') }}"><i class="fas fa-heartbeat"></i>Public Health <span><i
                                 class="fas fa-chevron-right"></i></span></a></li>
-                <li><a href="login.html"><i class="fas fa-car"></i>Supply Chain <span><i
+                <li><a href="{{ asset('SupplyChainCourses') }}"><i class="fas fa-car"></i>Supply Chain <span><i
                                 class="fas fa-chevron-right"></i></span></a></li>
             </ul>
 

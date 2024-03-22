@@ -50,7 +50,7 @@ class AcademyFrontController extends Controller
         $twitterAccount = 'ECSA_HC';
         $data = [
             'Title' => 'ECSA-HC e-Learning Academy | Course Catalog',
-            'Filter' => 'ECSA-HC Operated Courses',
+            'Filter' => ' Filter Set To ECSA-HC Operated Courses',
             'Desc' => 'Explore our comprehensive catalog of online courses tailored for healthcare professionals in East, Central, and Southern Africa. Enhance your skills with our specialized modules.',
             'Keywords' => 'ECSA-HC, Online Healthcare Courses, e-Learning, Medical Education, Professional Development, Health Modules, Course Catalog, East Africa, Central Africa, Southern Africa',
             'DatabaseData' => $courses,
@@ -69,7 +69,7 @@ class AcademyFrontController extends Controller
         $twitterAccount = 'ECSA_HC';
         $data = [
             'Title' => 'ECSA-HC e-Learning Academy | Course Catalog',
-            'Filter' => 'EPN Operated Courses',
+            'Filter' => ' Filter Set To EPN Operated Courses',
             'Desc' => 'Explore our comprehensive catalog of online courses tailored for healthcare professionals in East, Central, and Southern Africa. Enhance your skills with our specialized modules.',
             'Keywords' => 'ECSA-HC, Online Healthcare Courses, e-Learning, Medical Education, Professional Development, Health Modules, Course Catalog, East Africa, Central Africa, Southern Africa',
             'DatabaseData' => $courses,
@@ -88,7 +88,7 @@ class AcademyFrontController extends Controller
         $twitterAccount = 'ECSA_HC';
         $data = [
             'Title' => 'ECSA-HC e-Learning Academy | Course Catalog',
-            'Filter' => 'French Courses',
+            'Filter' => ' Filter Set To French Courses',
             'Desc' => 'Explore our comprehensive catalog of online courses tailored for healthcare professionals in East, Central, and Southern Africa. Enhance your skills with our specialized modules.',
             'Keywords' => 'ECSA-HC, Online Healthcare Courses, e-Learning, Medical Education, Professional Development, Health Modules, Course Catalog, East Africa, Central Africa, Southern Africa',
             'DatabaseData' => $courses,
@@ -107,7 +107,7 @@ class AcademyFrontController extends Controller
         $twitterAccount = 'ECSA_HC';
         $data = [
             'Title' => 'ECSA-HC e-Learning Academy | Course Catalog',
-            'Filter' => 'English Courses',
+            'Filter' => ' Filter Set To English Courses',
             'Desc' => 'Explore our comprehensive catalog of online courses tailored for healthcare professionals in East, Central, and Southern Africa. Enhance your skills with our specialized modules.',
             'Keywords' => 'ECSA-HC, Online Healthcare Courses, e-Learning, Medical Education, Professional Development, Health Modules, Course Catalog, East Africa, Central Africa, Southern Africa',
             'DatabaseData' => $courses,
@@ -126,7 +126,7 @@ class AcademyFrontController extends Controller
         $twitterAccount = 'ECSA_HC';
         $data = [
             'Title' => 'ECSA-HC e-Learning Academy | Course Catalog',
-            'Filter' => 'Pharmacy Related Courses',
+            'Filter' => ' Filter Set To Pharmacy Related Courses',
             'Desc' => 'Explore our comprehensive catalog of online courses tailored for healthcare professionals in East, Central, and Southern Africa. Enhance your skills with our specialized modules.',
             'Keywords' => 'ECSA-HC, Online Healthcare Courses, e-Learning, Medical Education, Professional Development, Health Modules, Course Catalog, East Africa, Central Africa, Southern Africa',
             'DatabaseData' => $courses,
@@ -144,7 +144,7 @@ class AcademyFrontController extends Controller
         $twitterAccount = 'ECSA_HC';
         $data = [
             'Title' => 'ECSA-HC e-Learning Academy | Course Catalog',
-            'Filter' => 'Health Management Courses',
+            'Filter' => ' Filter Set To Health Management Courses',
             'Desc' => 'Explore our comprehensive catalog of online courses tailored for healthcare professionals in East, Central, and Southern Africa. Enhance your skills with our specialized modules.',
             'Keywords' => 'ECSA-HC, Online Healthcare Courses, e-Learning, Medical Education, Professional Development, Health Modules, Course Catalog, East Africa, Central Africa, Southern Africa',
             'DatabaseData' => $courses,
@@ -163,7 +163,7 @@ class AcademyFrontController extends Controller
         $twitterAccount = 'ECSA_HC';
         $data = [
             'Title' => 'ECSA-HC e-Learning Academy | Course Catalog',
-            'Filter' => 'Healthcare Practice Courses',
+            'Filter' => ' Filter Set To Healthcare Practice Courses',
             'Desc' => 'Explore our comprehensive catalog of online courses tailored for healthcare professionals in East, Central, and Southern Africa. Enhance your skills with our specialized modules.',
             'Keywords' => 'ECSA-HC, Online Healthcare Courses, e-Learning, Medical Education, Professional Development, Health Modules, Course Catalog, East Africa, Central Africa, Southern Africa',
             'DatabaseData' => $courses,
@@ -182,7 +182,26 @@ class AcademyFrontController extends Controller
         $twitterAccount = 'ECSA_HC';
         $data = [
             'Title' => 'ECSA-HC e-Learning Academy | Course Catalog',
-            'Filter' => 'Public Health  Courses',
+            'Filter' => ' Filter Set To Public Health  Courses',
+            'Desc' => 'Explore our comprehensive catalog of online courses tailored for healthcare professionals in East, Central, and Southern Africa. Enhance your skills with our specialized modules.',
+            'Keywords' => 'ECSA-HC, Online Healthcare Courses, e-Learning, Medical Education, Professional Development, Health Modules, Course Catalog, East Africa, Central Africa, Southern Africa',
+            'DatabaseData' => $courses,
+            'TwitterAccount' => $twitterAccount,
+        ];
+
+        return view('front.ViewCourses.CourseList', $data);
+    }
+
+    public function SupplyChainCourses()
+    {
+// Change here to paginate
+        $courses = DB::table('courses')
+            ->where('Category', 'supply-chain-and-quality-assurance')
+            ->paginate(3); // paginate 6 items per page
+        $twitterAccount = 'ECSA_HC';
+        $data = [
+            'Title' => 'ECSA-HC e-Learning Academy | Course Catalog',
+            'Filter' => ' Filter Set To Supply Chain and Quality Assurance  Courses',
             'Desc' => 'Explore our comprehensive catalog of online courses tailored for healthcare professionals in East, Central, and Southern Africa. Enhance your skills with our specialized modules.',
             'Keywords' => 'ECSA-HC, Online Healthcare Courses, e-Learning, Medical Education, Professional Development, Health Modules, Course Catalog, East Africa, Central Africa, Southern Africa',
             'DatabaseData' => $courses,

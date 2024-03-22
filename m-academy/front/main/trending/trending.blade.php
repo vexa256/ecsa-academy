@@ -13,14 +13,15 @@
                <div class="course-box">
                    <div class="product">
                        <div class="product-img">
-                           <a href="search.html">
+                           <a href="{{ route('OurCourseCatalogue') }}">
                                <img class="img-fluid" alt=""
                                    src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                    width="600" height="300" style="height: 250px;">
                            </a>
                        </div>
                        <div class="product-content">
-                           <h3 class="title"><a href="search.html">Health Commodity Management (EN)</a></h3>
+                           <h3 class="title"><a href="{{ route('OurCourseCatalogue') }}">Health Commodity Management
+                                   (EN)</a></h3>
                            <div class="course-info d-flex align-items-center">
                                <div class="course-price">
                                    Operator: EPN
@@ -45,7 +46,7 @@
                                    Stars)</span></span>
                        </div>
                        <div class="author-join">
-                           <a href="login.html" class="btn join-now">Join Now</a>
+                           <a href="{{ route('OurCourseCatalogue') }}" class="btn join-now">Join Now</a>
                        </div>
                    </div>
                </div>
@@ -53,14 +54,15 @@
                <div class="course-box">
                    <div class="product">
                        <div class="product-img">
-                           <a href="search.html">
+                           <a href="{{ route('OurCourseCatalogue') }}">
                                <img class="img-fluid" alt=""
                                    src="https://training.epnetwork.org/wp-content/uploads/2021/03/virus-4915859_1920-624x437.png"
                                    width="600" height="300" style="height: 250px;">
                            </a>
                        </div>
                        <div class="product-content">
-                           <h3 class="title"><a href="search.html">Pandemic Preparedness & Covid-19 Vaccination</a>
+                           <h3 class="title"><a href="{{ route('OurCourseCatalogue') }}">Pandemic Preparedness &
+                                   Covid-19 Vaccination</a>
                            </h3>
                            <div class="course-info d-flex align-items-center">
                                <div class="course-price">
@@ -86,7 +88,7 @@
                                    Stars)</span></span>
                        </div>
                        <div class="author-join">
-                           <a href="login.html" class="btn join-now">Join Now</a>
+                           <a href="{{ route('OurCourseCatalogue') }}" class="btn join-now">Join Now</a>
                        </div>
                    </div>
                </div>
@@ -94,14 +96,15 @@
                <div class="course-box">
                    <div class="product">
                        <div class="product-img">
-                           <a href="search.html">
+                           <a href="{{ route('OurCourseCatalogue') }}">
                                <img class="img-fluid" alt=""
                                    src="https://images.unsplash.com/photo-1584463699031-6aa2e126d350?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                    width="600" height="300" style="height: 250px;">
                            </a>
                        </div>
                        <div class="product-content">
-                           <h3 class="title"><a href="search.html">Event-based surveillance (EBS) Course</a>
+                           <h3 class="title"><a href="{{ route('OurCourseCatalogue') }}">Event-based surveillance (EBS)
+                                   Course</a>
                            </h3>
                            <div class="course-info d-flex align-items-center">
                                <div class="course-price">
@@ -127,7 +130,7 @@
                                    Stars)</span></span>
                        </div>
                        <div class="author-join">
-                           <a href="login.html" class="btn join-now">Join Now</a>
+                           <a href="{{ route('OurCourseCatalogue') }}" class="btn join-now">Join Now</a>
                        </div>
                    </div>
                </div>
@@ -135,14 +138,16 @@
                <div class="course-box">
                    <div class="product">
                        <div class="product-img">
-                           <a href="search.html">
+                           <a href="{{ route('OurCourseCatalogue') }}">
                                <img class="img-fluid" alt=""
                                    src="https://training.epnetwork.org/wp-content/uploads/2023/01/ImageForArticle_10801_16623491270287278.jpg"
                                    width="600" height="200">
                            </a>
                        </div>
                        <div class="product-content">
-                           <h3 class="title"><a href="search.html">Antimicrobial resistance and stewardship </a>
+                           <h3 class="title"><a href="{{ route('OurCourseCatalogue') }}">Antimicrobial resistance
+                                   and
+                                   stewardship </a>
                            </h3>
                            <div class="course-info d-flex align-items-center">
                                <div class="course-price">
@@ -168,13 +173,13 @@
                                    Stars)</span></span>
                        </div>
                        <div class="author-join">
-                           <a href="login.html" class="btn join-now">Join Now</a>
+                           <a href="{{ route('OurCourseCatalogue') }}" class="btn join-now">Join Now</a>
                        </div>
                    </div>
                </div>
            </div>
            <div class="trend-explore-more text-center aos " data-aos="fade-up">
-               <a href="search.html" class="btn bg-explore">Explore More</a>
+               <a href="{{ route('OurCourseCatalogue') }}" class="btn bg-explore">Explore More</a>
            </div>
        </div>
 
